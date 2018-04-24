@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,12 @@
       margin: 0;
       padding: 0;
     }
+
     .box {
       margin: 0 auto;
       text-align: center;
     }
+
     .text-box {
       position: relative;
       padding: 10px 5px;
@@ -21,6 +24,7 @@
       margin: 60px auto;
       font-size: 28px;
     }
+
     .dash {
       position: absolute;
       left: 50%;
@@ -29,8 +33,11 @@
       height: 5px;
       background-color: #0af;
     }
+
     .text,
     .dash {
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
     }
 
@@ -42,11 +49,24 @@
       font-weight: bold;
       background-color: #fff;
       cursor: pointer;
-      box-shadow: 0 5px 5px -5px #000;
+      -webkit-box-shadow: 0 5px 5px -5px #000;
+              box-shadow: 0 5px 5px -5px #000;
       color: #000;
     }
+
     .btn:active {
-      animation: bgc .1s;
+      -webkit-animation: bgc .1s;
+              animation: bgc .1s;
+    }
+
+    @-webkit-keyframes bgc {
+      50% {
+        color: #fff;
+        background-color: rgba(0, 170, 255, .6);
+        border-color: rgba(0, 170, 255, .6);
+        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
+                box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
+      }
     }
 
     @keyframes bgc {
@@ -54,11 +74,13 @@
         color: #fff;
         background-color: rgba(0, 170, 255, .6);
         border-color: rgba(0, 170, 255, .6);
-        box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
+        -webkit-box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
+                box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
       }
     }
   </style>
 </head>
+
 <body>
   <div class="box">
     <div class="text-box">
@@ -85,4 +107,5 @@
     }
   </script>
 </body>
+
 </html>
