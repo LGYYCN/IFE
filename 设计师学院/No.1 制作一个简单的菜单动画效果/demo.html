@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>制作一个简单的菜单动画效果</title>
+  <style>
+    .box {
+      width: 1280px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .text {
+      position: relative;
+      padding: 10px;
+      width: 120px;
+      margin: 60px auto;
+      font-size: 28px;
+    }
+    .text::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      background-color: #0af;
+    }
+    .text:hover {
+      animation: ftcolor .5s alternate forwards;
+    }
+    .text:hover::after {
+      animation: btline .5s both;
+    }
+    .btn {
+      border-radius: 5px;
+      border: 1px solid #333;
+      padding: 5px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #fff;
+      cursor: pointer;
+      box-shadow: 5px 5px 8px -5px #aaa;
+    }
+    .btn:active {
+      animation: bgc .2s;
+    }
+    @keyframes bgc {
+      50% {
+        background-color: #0af;
+      }
+    }
+    @keyframes btline {
+      0% {
+        width: 0;
+        left: 50%;
+      }
+      100% {
+        width: 100%;
+        left: 0;
+      }
+    }
+    @keyframes ftcolor {
+      0% {
+        color: #000;
+      }
+      100% {
+        color: #0af;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="text">前端学院</div>
+    <button class="btn">切换样式</button>
+  </div>
+</body>
+</html>
