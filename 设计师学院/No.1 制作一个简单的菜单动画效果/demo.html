@@ -6,33 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>制作一个简单的菜单动画效果</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
     .box {
-      width: 1280px;
       margin: 0 auto;
       text-align: center;
     }
-    .text {
+    .text-box {
       position: relative;
-      padding: 10px;
+      padding: 10px 5px;
       width: 120px;
       margin: 60px auto;
       font-size: 28px;
     }
-    .text::after {
-      content: '';
-      display: block;
+    .dash {
       position: absolute;
-      left: 0;
+      left: 50%;
       bottom: 0;
+      width: 0;
       height: 5px;
       background-color: #0af;
     }
-    .text:hover {
-      animation: ftcolor .5s alternate forwards;
+    .text,
+    .dash {
+      transition: all .3s ease-in-out;
     }
-    .text:hover::after {
-      animation: btline .5s both;
-    }
+
     .btn {
       border-radius: 5px;
       border: 1px solid #333;
@@ -41,40 +42,47 @@
       font-weight: bold;
       background-color: #fff;
       cursor: pointer;
-      box-shadow: 5px 5px 8px -5px #aaa;
+      box-shadow: 0 5px 5px -5px #000;
+      color: #000;
     }
     .btn:active {
-      animation: bgc .2s;
+      animation: bgc .1s;
     }
+
     @keyframes bgc {
       50% {
-        background-color: #0af;
-      }
-    }
-    @keyframes btline {
-      0% {
-        width: 0;
-        left: 50%;
-      }
-      100% {
-        width: 100%;
-        left: 0;
-      }
-    }
-    @keyframes ftcolor {
-      0% {
-        color: #000;
-      }
-      100% {
-        color: #0af;
+        color: #fff;
+        background-color: rgba(0, 170, 255, .6);
+        border-color: rgba(0, 170, 255, .6);
+        box-shadow: 0 5px 5px -5px rgba(0, 170, 255, .6);
       }
     }
   </style>
 </head>
 <body>
   <div class="box">
-    <div class="text">前端学院</div>
+    <div class="text-box">
+      <span class="text">前端学院</span>
+      <i class="dash"></i>
+    </div>
     <button class="btn">切换样式</button>
   </div>
+
+  <script>
+    let text = document.getElementsByClassName('text')[0]
+    let dash = document.getElementsByClassName('dash')[0]
+    let btn = document.getElementsByClassName('btn')[0]
+    btn.onmousedown = function () {
+      if (dash.offsetWidth === 0) {
+        text.style.color = '#0af'
+        dash.style.width = 100 + '%'
+        dash.style.left = 0
+      } else {
+        text.style.color = '#333'
+        dash.style.width = 0
+        dash.style.left = 50 + '%'
+      }
+    }
+  </script>
 </body>
 </html>
