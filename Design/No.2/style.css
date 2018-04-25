@@ -24,6 +24,7 @@ section {
   font-weight: bold;
   border: 2px solid #ddd;
   background-color: #f0f0f0;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -34,41 +35,51 @@ section {
 }
 
 .box1 {
-  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+          transform: skewX(30deg);
 }
 
 .box1:hover {
-  transform: skewX(0);
+  -webkit-transform: skewX(0);
+          transform: skewX(0);
 }
 
 .box2 {
-  transform: scaleX(.5)
+  -webkit-transform: scaleX(.5);
+          transform: scaleX(.5)
 }
 
 .box2:hover {
-  transform: scaleX(1)
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1)
 }
 
 .box3 {
-  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg)
 }
 
 .box3:hover {
-  transform: rotate(0)
+  -webkit-transform: rotate(0);
+          transform: rotate(0)
 }
 
 .box4 {
-  transform: translate(10px, 20px)
+  -webkit-transform: translate(10px, 20px);
+          transform: translate(10px, 20px)
 }
 
 .box4:hover {
-  transform: translate(0)
+  -webkit-transform: translate(0);
+          transform: translate(0)
 }
 
 .box5 {
-  transform: skewX(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px)
+  -webkit-transform: skewX(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+          transform: skewX(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px)
 }
 
 .box5:hover {
-  transform: skewX(0) scaleX(1) rotate(0) translate(0)
+  -webkit-transform: skewX(0) scaleX(1) rotate(0) translate(0);
+          transform: skewX(0) scaleX(1) rotate(0) translate(0)
 }
