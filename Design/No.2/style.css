@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+section {
+  text-align: center;
+}
+
+.main {
+  margin: 60px auto 0;
+  position: relative;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  background-color: #f0f0f0;
+  transition: all .2s ease-in-out;
+}
+
+.box:hover {
+  background-color: #6cf;
+  color: #f0f0f0;
+  border-color: #6bf;
+}
+
+.box1 {
+  transform: skewX(30deg);
+}
+
+.box1:hover {
+  transform: skewX(0);
+}
+
+.box2 {
+  transform: scaleX(.5)
+}
+
+.box2:hover {
+  transform: scaleX(1)
+}
+
+.box3 {
+  transform: rotate(45deg)
+}
+
+.box3:hover {
+  transform: rotate(0)
+}
+
+.box4 {
+  transform: translate(10px, 20px)
+}
+
+.box4:hover {
+  transform: translate(0)
+}
+
+.box5 {
+  transform: skewX(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px)
+}
+
+.box5:hover {
+  transform: skewX(0) scaleX(1) rotate(0) translate(0)
+}
