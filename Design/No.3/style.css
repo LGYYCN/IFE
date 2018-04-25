@@ -1,0 +1,45 @@
+* {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+/* 耳朵动效 */
+.container:hover .ear-wrap .left {
+  -webkit-transform: rotateZ(-10deg) translateY(-10px);
+          transform: rotateZ(-10deg) translateY(-10px);
+}
+.container:hover .ear-wrap .right {
+  -webkit-transform: rotateZ(10deg) translateY(-10px);
+          transform: rotateZ(10deg) translateY(-10px);
+}
+
+/* 眼睛微眯 */
+.container:hover .eye-bottom {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px)
+}
+
+/* 瞳孔缩放 */
+.container:hover .eye-core {
+  -webkit-transform: scaleX(.85);
+          transform: scaleX(.85)
+}
+
+/* 腮红 */
+.container:hover .face-red {
+  opacity: .8;
+  -webkit-transform: scaleX(.8);
+          transform: scaleX(.8);
+  background: #e85a5e;
+}
+
+/* 嘴角上扬 */
+.container:hover .mouth {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+/* .container:hover .mouth-wrap .left {
+  border-bottom-left-radius: 50%;
+}
+.container:hover .mouth-wrap .right {
+  border-bottom-right-radius: 50%;
+} */
