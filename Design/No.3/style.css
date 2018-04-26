@@ -1,6 +1,6 @@
 * {
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 /* 耳朵动效 */
 .container:hover .ear-wrap .left {

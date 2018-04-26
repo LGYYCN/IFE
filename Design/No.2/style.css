@@ -17,7 +17,7 @@ section {
 .box {
   position: relative;
   display: inline-block;
-  margin: 0 30px;
+  margin: 30px;
   width: 80px;
   height: 80px;
   line-height: 80px;

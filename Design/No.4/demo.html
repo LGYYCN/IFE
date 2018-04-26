@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>No.4 - 3D 空间的卡片翻转动效</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .box {
+      position: relative;
+      margin: 60px auto;
+      width: 250px;
+      height: 350px;
+      -webkit-perspective: 500px;
+              perspective: 500px;
+    }
+    .box::before {
+      content: url('./正面.jpg');
+      position: absolute;
+      left: 0;
+      -webkit-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+      z-index: 1;
+    }
+    .box::after {
+      content: url('./反面.jpg');
+      position: absolute;
+      left: 0;
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+      -webkit-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out;
+    }
+    .box:hover::before {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      z-index: 0;
+    }
+    .box:hover::after {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>No.4 - 3D 空间的卡片翻转动效</h1>
+  </header>
+  <section>
+    <div class="box"></div>
+  </section>
+
+</body>
+</html>
