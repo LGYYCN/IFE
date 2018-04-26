@@ -20,15 +20,17 @@
               perspective: 500px;
     }
     .box::before {
-      content: url('./正面.jpg');
+      /* content: url('http://www.jackie.top/ife/design/no.4/1.jpg'); */
+      content: url('./反面.jpg');
       position: absolute;
       left: 0;
       -webkit-transition: all .8s ease-in-out;
       transition: all .8s ease-in-out;
-      z-index: 1;
+      /* z-index: 1; */
     }
     .box::after {
-      content: url('./反面.jpg');
+      /* content: url('http://www.jackie.top/ife/design/no.4/2.jpg'); */
+      content: url('./正面.jpg');
       position: absolute;
       left: 0;
       -webkit-transform: rotateY(-180deg);
@@ -39,7 +41,7 @@
     .box:hover::before {
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
-      z-index: 0;
+      /* z-index: 0; */
     }
     .box:hover::after {
       -webkit-transform: rotateY(0);
