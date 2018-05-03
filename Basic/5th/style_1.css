@@ -1,0 +1,49 @@
+html,body,li,h2,h3 {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0 20%;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+li {
+  font-size: 1.6rem;
+}
+span {
+  font-size: 1.6rem;
+}
+li {
+  list-style: none;
+}
+.info {
+  position: relative;
+  margin-top: 30px;
+}
+.info .content {
+  overflow: hidden;
+}
+.info li {
+  margin-top: 10px;
+}
+.basic li,
+.contact li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.basic li h3,
+.contact li h3 {
+  display: inline-block;
+  margin-right: 15px;
+}
