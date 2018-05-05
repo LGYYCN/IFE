@@ -1,0 +1,145 @@
+html,
+body,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-width: 50rem;
+  padding: 0 15%
+}
+
+header {
+  position: absolute;
+  min-width: 50rem;
+  width: 100%;
+  height: 10rem;
+  line-height: 10rem;
+  top: 0;
+  left: 0;
+  background-color: #6bf;
+}
+
+header h1 {
+  width: 20%;
+  text-align: center;
+  /* margin-left: 10%; */
+}
+
+section {
+  position: relative;
+  margin-top: 10rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+.check {
+  position: relative;
+  font-size: 0;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.check input {
+  position: relative;
+  /* font-size: 1.4rem; */
+  top: .1rem;
+}
+
+.check label {
+  margin-right: 2rem;
+  padding-left: .5rem;
+  font-size: 1.4rem;
+}
+
+.box {
+  /* top: 5rem; */
+  position: relative;
+  overflow: hidden;
+}
+
+.info {
+  clear: both;
+  position: relative;
+  min-height: 10rem;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.info:nth-child(n+2) {
+  margin-top: -0.2rem;
+}
+
+.info .title {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  text-align: center;
+  background-color: #eee;
+  border-width: .2rem 0;
+  border-color: #fff;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.info .title h2 {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 100%;
+}
+
+.info .content {
+  position: absolute;
+  margin-left: 20%;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: .2rem 0;
+  border-color: #eee;
+  border-style: solid;
+}
+
+.basic li,
+.contact li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.info li h3 {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
