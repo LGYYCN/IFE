@@ -1,102 +1,141 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>个人简历</title>
-  <!-- <link rel="stylesheet" href="style_1.css"> -->
+  <link rel="stylesheet" href="style_1.css" title="theme">
   <!-- <link rel="stylesheet" href="style_2.css"> -->
-  <link rel="stylesheet" href="style_3.css">
+  <!-- <link rel="stylesheet" href="style_3.css"> -->
 </head>
+
 <body>
-  <header>
-    <h1>简历</h1>
-  </header>
-  <section>
-    <div class="info basic">
-      <div class="title">
-        <h2>基本信息</h2>
+  <div class="check">
+    <input type="radio" name="style" id="style_1" checked onclick="choose('style_1.css')">
+    <label for="style_1">样式一</label>
+    <input type="radio" name="style" id="style_2" onclick="choose('style_2.css')">
+    <label for="style_2">样式二</label>
+    <input type="radio" name="style" id="style_3" onclick="choose('style_3.css')">
+    <label for="style_3">样式三</label>
+  </div>
+  <div class="box">
+
+    <header>
+      <h1>简历</h1>
+    </header>
+    <section>
+      <div class="info basic">
+        <div class="title">
+          <h2>基本信息</h2>
+        </div>
+        <div class="content">
+          <li>
+            <h3>姓名</h3>
+            <span>张三</span>
+          </li>
+          <li>
+            <h3>性别</h3>
+            <span>男</span>
+          </li>
+          <li>
+            <h3>应聘职位</h3>
+            <span>Web前端工程师</span>
+          </li>
+        </div>
       </div>
-      <div class="content">
-        <li>
-          <h3>姓名</h3>
-          <span>张三</span>
-        </li>
-        <li>
-          <h3>性别</h3>
-          <span>男</span>
-        </li>
-        <li>
-          <h3>应聘职位</h3>
-          <span>Web前端工程师</span>
-        </li>
+      <div class="info contact">
+        <div class="title">
+          <h2>联系方式</h2>
+        </div>
+        <div class="content">
+          <li>
+            <h3>手机</h3>
+            <span>12312345678</span>
+          </li>
+          <li>
+            <h3>Email</h3>
+            <span>
+              <a href="mailto:Test@Test.com">Test@Test.com</a>
+            </span>
+          </li>
+          <li>
+            <h3>个人主页</h3>
+            <span>
+              <a href="http://www.test.com">test.com</a>
+            </span>
+          </li>
+        </div>
       </div>
-    </div>
-    <div class="info contact">
-      <div class="title">
-        <h2>联系方式</h2>
+      <div class="info ability">
+        <div class="title">
+          <h2>能力描述</h2>
+        </div>
+        <div class="content">
+          <li>
+            <h3>技术能力</h3>
+            <span>熟练掌握HTML、CSS、JavaScript</span>
+          </li>
+          <li>
+            <h3>综合能力</h3>
+            <span>良好的沟通能力，主动且积极，努力且勤奋！</span>
+          </li>
+        </div>
       </div>
-      <div class="content">
-        <li>
-          <h3>手机</h3>
-          <span>12312345678</span>
-        </li>
-        <li>
-          <h3>Email</h3>
-          <span><a href="mailto:Test@Test.com">Test@Test.com</a></span>
-        </li>
-        <li>
-          <h3>个人主页</h3>
-          <span><a href="http://www.test.com">test.com</a></span>
-        </li>
+      <div class="info education">
+        <div class="title">
+          <h2>教育经历</h2>
+        </div>
+        <div class="content">
+          <li>
+            <h3>本科</h3>
+            <span>百度前端技术学院小薇学院</span>
+          </li>
+          <li>
+            <h3>研究生</h3>
+            <span>百度前端技术学院大斌学院</span>
+          </li>
+        </div>
       </div>
-    </div>
-    <div class="info ability">
-      <div class="title">
-        <h2>能力描述</h2>
+      <div class="info project">
+        <div class="title">
+          <h2>项目经历</h2>
+        </div>
+        <div class="content">
+          <li>
+            <h3>小度小度</h3>
+            <span>作为前端工程师的角色参与了ABC组件的开发</span>
+          </li>
+          <li>
+            <h3>SAN Doc</h3>
+            <span>作为文档工程师参与了SAN Doc编写</span>
+          </li>
+        </div>
       </div>
-      <div class="content">
-        <li>
-          <h3>技术能力</h3>
-          <span>熟练掌握HTML、CSS、JavaScript</span>
-        </li>
-        <li>
-          <h3>综合能力</h3>
-          <span>良好的沟通能力，主动且积极，努力且勤奋！</span>
-        </li>
-      </div>
-    </div>
-    <div class="info education">
-      <div class="title">
-        <h2>教育经历</h2>
-      </div>
-      <div class="content">
-        <li>
-          <h3>本科</h3>
-          <span>百度前端技术学院小薇学院</span>
-        </li>
-        <li>
-          <h3>研究生</h3>
-          <span>百度前端技术学院大斌学院</span>
-        </li>
-      </div>
-    </div>
-    <div class="info project">
-      <div class="title">
-        <h2>项目经历</h2>
-      </div>
-      <div class="content">
-        <li>
-          <h3>小度小度</h3>
-          <span>作为前端工程师的角色参与了ABC组件的开发</span>
-        </li>
-        <li>
-          <h3>SAN Doc</h3>
-          <span>作为文档工程师参与了SAN Doc编写</span>
-        </li>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <script>
+    function choose(path) {
+      var d_head = document.head
+      var d_link = document.getElementsByTagName("link")
+      if (d_link) {
+        for (let i = 0; i < d_link.length; i++) {
+          if (d_link[i].getAttribute("title") === "theme") {
+            d_head.removeChild(d_link[i])
+          }
+        }
+      }
+      var n_link = document.createElement("link")
+      n_link.setAttribute("rel", "stylesheet")
+      n_link.setAttribute("title", "theme")
+      n_link.setAttribute("href", path)
+      d_head.appendChild(n_link)
+    }
+  </script>
+
+
 </body>
+
 </html>
