@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Monteserrat-extralight;
+  src: url('./fonts/montserrat-extralight/montserrat-extralight-webfont.ttf'), url('./fonts//montserrat-extralight/montserrat-extralight-webfont.woff'), url('./fonts/montserrat-extralight/montserrat-extralight-webfont.woff2')
+}
+
+@font-face {
+  font-family: Monteserrat-light;
+  src: url('./fonts/montserrat-light/montserrat-light-webfont.woff'), url('./fonts/montserrat-light/montserrat-light-webfont.woff2')
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Monteserrat-extralight", "Monteserrat-light", Arial, Helvetica, sans-serif;
+  min-width: 1267px;
+}
+
+header {
+  background: url('./img/bg_img1.png');
+  background-size: cover;
+}
+
+header .content {
+  width: 1280px;
+}
